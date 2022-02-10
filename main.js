@@ -1,4 +1,4 @@
-export const chayote = {
+const $.chayote = {
 	jira: {
 		__API__: function(params){ 
 			AppLinks.get('/rest/jira-integration/latest/servers')
@@ -8,7 +8,7 @@ export const chayote = {
 				});
 		},
 		issues: {
-			get: function(id, callback){chayote.jira.__API__({method:'GET',api:'/rest/api/latest/issue/' + id, callback})}
+			get: function(id, callback){$.chayote.jira.__API__({method:'GET',api:'/rest/api/latest/issue/' + id, callback})}
 		}
 	}
 }
