@@ -1,4 +1,4 @@
-chayote = {
+export const chayote = {
 	jira: {
 		__API__: function(params){ 
 			AppLinks.get('/rest/jira-integration/latest/servers')
@@ -12,8 +12,3 @@ chayote = {
 		}
 	}
 }
-
-
-chayote.jira.issues.get('CMS-3146', function(response) {
-	$("div#target").html('<div><textarea cols="175" rows="10">' + JSON.stringify(response, null, 2) + '</textarea></div>');
-});
