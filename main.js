@@ -8,7 +8,7 @@ const chayote = {
 				});
 		},
 		issues: {
-			get: function(id, callback){$.chayote.jira.__API__({method:'GET',api:'/rest/api/latest/issue/' + id, callback})}
+			get: function(id, callback){chayote.jira.__API__({method:'GET',api:'/rest/api/latest/issue/' + id, callback})}
 		}
 	}
 }
