@@ -1,4 +1,4 @@
-const $.chayote = {
+const chayote = {
 	jira: {
 		__API__: function(params){ 
 			AppLinks.get('/rest/jira-integration/latest/servers')
